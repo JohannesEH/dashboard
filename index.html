@@ -41,9 +41,9 @@
   </head>
   <body>
     <script>
-      var category = location.search.substring(1);
-      category = category ? category : "technology";
-      url = category ? "https://source.unsplash.com/category/" + category + "/1920x1080" : "https://source.unsplash.com/random/1920x1080"
+      var category = location.search.substring(1); // location.hash.substring(1);
+      var search = ''; // location.search;
+      url = (category ? "https://source.unsplash.com/category/" + category + "/featured/1920x1080" : "https://source.unsplash.com/featured/1920x1080") + "/" + search;
 
       var bg = document.createElement("img");
       bg.onload = function() {

@@ -6,9 +6,9 @@ A simple slideshow that shows random fading images at 1920x1080 resolution from 
 
 ## Usage
 
-For random images use: https://jubii.github.io/dashboard/
+For random featured images use: https://jubii.github.io/dashboard/
 
-For random images in a specific category use: https://jubii.github.io/dashboard/?technology
+For random images in a specific category use: https://jubii.github.io/dashboard/?buildings
 
 Avaailable categories are:
 
