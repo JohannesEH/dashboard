@@ -21,7 +21,7 @@ Use the following querystring parameters to configure the page:
     </thead>
     <tbody>
         <tr><td>sz</td><td>size</td><td>*{number}x{number}*</td><td>*screen size*</td></tr>
-        <tr><td>t</td><td>timeout</td><td>*number between 30 and 86400 seconds*</td><td>300</td></tr>
+        <tr><td>t</td><td>timeout</td><td>*number between 30 and 86400 seconds*</td><td>900</td></tr>
         <tr><td>f</td><td>featured</td><td>*0* or *1*</td><td>1</td></tr>
         <tr><td>cat</td><td>category</td><td>buildings,food,nature,people,technology,objects</td><td>*not set*</td></tr>
         <tr><td>col</td><td>collection</td><td>*collection id from unsplash*</td><td>*not set*</td></tr>
