@@ -29,4 +29,6 @@ Slide every 60 seconds from the buildings category
 
 ## Example windows shortcut
 
+To startup a chrome instace on a machine at power-on use something like the following:
+
     "[path to chrome]\chrome.exe" --start-fullscreen --new-window https://jubii.github.io/dashboard/ --window-position=0,0
