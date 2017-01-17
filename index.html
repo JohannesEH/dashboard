@@ -57,7 +57,7 @@
 
       // Parse and cap the cfg.t value
       cfg.t = parseInt(cfg.t);
-      cfg.t = Math.max(cfg.t, 30);
+      cfg.t = Math.max(cfg.t, 15);
       cfg.t = Math.min(cfg.t, 86400);
 
       var url = "https://source.unsplash.com/";
@@ -89,7 +89,7 @@
 
       var s = document.createElement("style");
       document.head.appendChild(s);
-      s.sheet.insertRule('img { transition: opacity 10s linear, transform ' + cfg.t + 's ease-out; }', 0);
+      s.sheet.insertRule('img { transition: opacity 5s linear, transform ' + cfg.t + 's ease-out; }', 0);
     </script>
 
     <style>
@@ -164,8 +164,8 @@
           // Set timer for refresh event - 10 seconds
           setTimeout(function() {
             location.reload();
-          }, 10000);
-        }, (cfg.t - 10) * 1000);
+          }, 5000);
+        }, (cfg.t - 5) * 1000);
       };
       document.body.appendChild(bg);
     </script>
