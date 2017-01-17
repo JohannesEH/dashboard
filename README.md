@@ -2,7 +2,7 @@
 
 ## Description
 
-A simple slideshow that shows random fading images at 1920x1080 resolution from https://source.unsplash.com/. Images fades out and changes after 300 seconds.
+A simple slideshow that shows random fading images at 1920x1080 resolution from https://source.unsplash.com/. The image fades out and reloads every 5 minutes.
 
 ## Usage
 
