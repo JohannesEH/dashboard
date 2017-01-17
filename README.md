@@ -10,14 +10,24 @@ Go to url: https://jubii.github.io/dashboard/
 
 Use the following querystring parameters to configure the page:
 
-Param | Name | Format | Default
--|-|-|-
-sz|size|*{number}x{number}*|*screen size*
-t|timeout|*number between 30 and 86400 seconds*|300
-f|featured|*0* or *1*|1
-cat|category|buildings,food,nature,people,technology,objects|*not set*
-col|collection|*collection id from unsplash*|*not set*
-q|search terms|*{term1}[,{term2}...]*|*not set*
+<table>
+    <thead>
+        <tr>
+            <td>Param</td>
+            <td>Name</td>
+            <td>Format</td>
+            <td>Param</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>sz</td><td>size</td><td>*{number}x{number}*</td><td>*screen size*</td></tr>
+        <tr><td>t</td><td>timeout</td><td>*number between 30 and 86400 seconds*</td><td>300</td></tr>
+        <tr><td>f</td><td>featured</td><td>*0* or *1*</td><td>1</td></tr>
+        <tr><td>cat</td><td>category</td><td>buildings,food,nature,people,technology,objects</td><td>*not set*</td></tr>
+        <tr><td>col</td><td>collection</td><td>*collection id from unsplash*</td><td>*not set*</td></tr>
+        <tr><td>q</td><td>search terms</td><td>*{term1}[,{term2}...]*</td><td>*not set*</td></tr>
+    </tbody>
+</table>
 
 ## Example urls
 
