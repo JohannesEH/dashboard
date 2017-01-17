@@ -6,17 +6,27 @@ A simple slideshow that shows random fading images at 1920x1080 resolution from 
 
 ## Usage
 
-For random featured images use: https://jubii.github.io/dashboard/
+Go to url: https://jubii.github.io/dashboard/
 
-For random images in a specific category use: https://jubii.github.io/dashboard/?buildings
+Use the following querystring parameters to configure the page:
 
-Avaailable categories are:
+Param | Name | Format | Default
+-|-|-|-
+sz|size|*{number}x{number}*|*screen size*
+t|timeout|*number between 30 and 86400 seconds*|300
+f|featured|*0* or *1*|1
+cat|category|buildings,food,nature,people,technology,objects|*not set*
+col|collection|*collection id from unsplash*|*not set*
+q|search terms|*{term1}[,{term2}...]*|*not set*
 
-* buildings
-* food
-* nature
-* people
-* technology
-* objects
+## Example urls
 
-Example windows shortcut: "[path to chrome]\chrome.exe" --start-fullscreen --new-window https://jubii.github.io/dashboard/ --window-position=0,0
+Default settings:
+    https://jubii.github.io/dashboard/
+
+Slide every 60 seconds from the buildings category
+    https://jubii.github.io/dashboard/?t=60&cat=buildings
+
+## Example windows shortcut
+
+    "[path to chrome]\chrome.exe" --start-fullscreen --new-window https://jubii.github.io/dashboard/ --window-position=0,0
