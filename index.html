@@ -7,9 +7,56 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+
+      img { 
+        height: 1080px;
+        width: 1920px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transform: scale(1.4);
+        -webkit-transition: opacity 10s ease-in-out, transform 300s linear;
+           -moz-transition: opacity 10s ease-in-out, transform 300s linear;
+            -ms-transition: opacity 10s ease-in-out, transform 300s linear;
+             -o-transition: opacity 10s ease-in-out, transform 300s linear;
+                transition: opacity 10s ease-in-out, transform 300s linear;
+      }
+
+      img.visible {
+        opacity: 1;
+      }
+
+      img.zoom {
+        transform: scale(1);
+      }
+    </style>
   </head>
   <body>
-    <p>Hello world! This is HTML5 Boilerplate.</p>
+    <script>
+      var category = location.search.substring(1);
+      category = category ? category : "technology";
+      url = category ? "https://source.unsplash.com/category/" + category + "/1920x1080" : "https://source.unsplash.com/random/1920x1080"
+
+      var bg = document.createElement("img");
+      bg.onload = function() {
+        bg.classList.add("visible", "zoom");
+        setTimeout(function() {
+          bg.classList.remove("visible");
+          setTimeout(function() {
+            location.reload();
+          }, 10000);
+        }, 390000);
+      }
+      bg.src = url;
+      document.body.appendChild(bg);
+    </script>
   </body>
 </html>
