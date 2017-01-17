@@ -18,3 +18,5 @@ Avaailable categories are:
 * people
 * technology
 * objects
+
+Example windows shortcut: "[path to chrome]\chrome.exe" --start-fullscreen --new-window https://jubii.github.io/dashboard/ --window-position=0,0
