@@ -112,15 +112,10 @@
         -ms-user-select: none;
         -moz-user-select: none;
         -webkit-user-select: none;
-        transform: scale(1.3);
       }
 
       img.visible {
         opacity: 1;
-      }
-
-      img.zoomout {
-        transform: scale(1);
       }
 
       .loader {
@@ -154,7 +149,7 @@
       bg.draggable = false;
       bg.src = url;
       bg.onload = function() {
-        bg.classList.add("visible", "zoomout");
+        bg.classList.add("visible");
         document.getElementById("loader").classList.add("fadeOut");
 
         // Set timer for fadeout event - 290 seconds
