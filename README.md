@@ -16,7 +16,7 @@ Use the following querystring parameters to configure the page:
             <td>Param</td>
             <td>Name</td>
             <td>Format</td>
-            <td>Param</td>
+            <td>Default</td>
         </tr>
     </thead>
     <tbody>
