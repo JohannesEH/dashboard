@@ -13,10 +13,10 @@ Use the following querystring parameters to configure the page:
 <table>
     <thead>
         <tr>
-            <td>Param</td>
-            <td>Name</td>
-            <td>Format</td>
-            <td>Default</td>
+            <th>Param</th>
+            <th>Name</th>
+            <th>Format</th>
+            <th>Default</th>
         </tr>
     </thead>
     <tbody>
