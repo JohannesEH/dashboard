@@ -53,8 +53,14 @@
         cfg = Object.assign({}, cfg, JSON.parse(json));
       }
       
-      if(cfg.preset === 'jubii1') {
-        console.log('preset');
+      if (cfg.preset === 'jubii1') {
+        cfg.col = '280662'; // new zealand 1
+        cfg.f = 0; // use unfeatured images
+      }
+
+      if (cfg.preset === 'jubii2') {
+        cfg.col = '768714'; // new zealand 2
+        cfg.f = 0; // use unfeatured images
       }
 
       // Make sure cfg.f is either 0 or 1
